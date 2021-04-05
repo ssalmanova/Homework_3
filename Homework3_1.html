@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.writeln("Простые числа от 0 до 100 это: ")
+        var t, i = 2; //Потому что простых чисел меньше 2 не бывает
+        while (i <= 100) {
+
+            t=0;
+
+            for (var j=2; j<i; j++) {
+                if (i % j == 0) {t++}
+            }
+
+            if (t==0) {
+                document.writeln(i);
+            }
+
+            i++;
+        }
+    </script>
+</body>
+</html>

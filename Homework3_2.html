@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var basket = [
+            ["Плащ на высоких каблуках", 1000000, 1],
+            ["Шляпа с длинными рукавами", 100, 2],
+            ["Стильные туфли без подошвы", 10000, 5]
+        ]; //Корзина, в ней хранятся товары, их цена и количество
+        
+        function countBasketPrice(basket) {
+            var totalCost = 0;
+
+            for (let i = 0; i < basket.length; i++) {
+                totalCost = totalCost + basket[i][1] * basket[i][2];
+            }
+
+            return(totalCost);
+
+        }
+
+
+        document.write(countBasketPrice(basket));
+
+    </script>
+</body>
+</html>
